@@ -1,0 +1,8 @@
+%Tokens BEGIN SIGMA SEMICOLON
+%Non-terminals <statement-list> <statement-list-prime> <statement> <statement-list-prime-prime>
+%Start <statement-list>
+%Rules
+<statement-list> : <statement> <statement-list-prime> | <statement> <statement-list-prime-prime>
+<statement-list-prime> : SEMICOLON <statement-list> | SIGMA
+<statement-list-prime-prime> : SEMICOLON <statement-list> | SIGMA
+<statement> : BEGIN

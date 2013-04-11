@@ -1,0 +1,7 @@
+%Tokens BEGIN LEFTPAR SIGMA
+%Non-terminals <Tiny-program> <statement-list> <statement>
+%Start <Tiny-program>
+%Rules
+<Tiny-program> : BEGIN <statement-list>
+<statement-list> : <statement-list> <statement> | <statement>
+<statement> : LEFTPAR <statement> | SIGMA
