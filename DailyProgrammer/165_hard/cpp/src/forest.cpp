@@ -1,9 +1,9 @@
 #include <iostream>
+#include "tree.cpp"
 int main()
 {
-    // Initialize parameters
-    double lumberjackPercentage = 10/100;
-    double treePercentage = 20/100;
-    double bearPercentage = 5/100;
-    int mapSize = 10;
+    std::cout << "Here" << std::endl;
+    tree myTree;
+    myTree.act();
+    myTree.move();
 }
